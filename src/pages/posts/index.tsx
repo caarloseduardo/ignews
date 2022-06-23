@@ -62,8 +62,6 @@ export const getStaticProps: GetStaticProps = async () => {
     };
   })
 
-  console.log(response[0].data.content[0].text.split('\n')[0])
-
   return {
     props: {
       posts,
