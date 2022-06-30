@@ -1,3 +1,4 @@
+import { useRouter } from 'next/router';
 import { signIn, useSession } from 'next-auth/react';
 
 import { api } from '../../services/api';
@@ -10,13 +11,19 @@ interface SubscribeButtonProps {
 }
 
 export function SubscribeButton({ priceId }: SubscribeButtonProps) {
-  const { status } = useSession();
+  const { status, data } = useSession();
+  const router = useRouter();
 
   const hasSession = status === 'authenticated';
 
   const handleSubscribe = async () => {
     if (!hasSession) {
       signIn('github');
+      return;
+    }
+
+    if (data.activeSubscription) {
+      router.push('/posts');
       return;
     }
 
