@@ -1,6 +1,6 @@
 <h1 align="center">
 
-<img src="https://raw.githubusercontent.com/khalleb/ignews/main/public/images/avatar.svg" alt="rocketshoes" width="100px"/>
+<img src="./.github/avatar.svg" alt="Ignews" width="100px"/>
 
 </h1>
 
@@ -21,17 +21,24 @@
 
 ## :dart: Sobre ##
 
-O projeto ig.news é um blog onde os usuários podem ter acesso ao conteúdo de cada postagem de acordo com o status de sua assinatura.<br>
-O blog possui um sistema de compra integrado com o STRIPE, e após o usuário realizar o pagamento, sua inscrição estará ativa e pronta para visualizar o conteúdo completo
-de todo o blog. Caso o usuário não deseje optar pela assinatura, ele terá acesso limitado ao conteúdo das postagens. E todos os dados necessários para se fazer verificações
-de assinaturas ou dados dos usuários, estão salvos no banco de dados FaunaDB.
-<br>
-<br>
-Essa é uma aplicação Serverless, ou seja, todo o processo que dependeria de um backend foi integrado dentro do front e seguindo o padrão da JAMStack.
-<br>
-As postagens são feitas pelo painel do Prismic CMS e integradas diretamente pelo front.
+<p>
+  O ignews é um portal de notícias no qual os usuários pagam para ter acesso. 
+  o usuário só tem acesso das postagens caso ele tenha uma inscrição ativa no Stripe. 
+  caso o usuário não seja inscrito, poderá ler apenas um resumo das postagens.
+</p>
+<p>
+  Os meios de pagamento da aplicação são integrados com a API do Stripe, juntamente
+  do FaunaDB para armazenar as informações dos usuários. as postagens são administradas
+  através do CMS Prismic.io 
+</p>
+<p>A aplicação é construída com modelo <strong>Serveless</strong>, sem necessidade de criar uma API externa para manipular os dados</p>
 
-
+<p>
+  <img src="./.github/home.png" alt="Home" />
+  <img src="./.github/stripe_checkout.png" alt="Stripe Checkout" />
+  <img src="./.github/posts.png" alt="Posts" />
+  <img src="./.github/post.png" alt="Post" />
+</p>
 ## :rocket: Tecnologias ##
 
 As seguintes tecnologias foram utilizadas no projeto:
