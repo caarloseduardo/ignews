@@ -6,15 +6,13 @@
 
 <p align="center">
   <h1 align="center"> Ignews - Portal de notícias 📰🚀 </h1>
-  <h2 align="center">Em construção 🚧</h2>
 </p>
 
 <p align="center">
   <a href="#dart-sobre">Sobre</a> &#xa0; | &#xa0; 
   <a href="#rocket-tecnologias">Tecnologias</a> &#xa0; | &#xa0;
   <a href="#white_check_mark-requerimentos">Requerimentos</a> &#xa0; | &#xa0;
-  <a href="#checkered_flag-começando">Começando</a> &#xa0; &#xa0; | &#xa0;
-  <a href="#framed_picture-imagens">Imagens</a> &#xa0; &#xa0;
+  <a href="#checkered_flag-começando">Começando</a> &#xa0; &#xa0;
 </p>
 
 <br>
@@ -39,6 +37,7 @@
   <img src="./.github/posts.png" alt="Posts" />
   <img src="./.github/post.png" alt="Post" />
 </p>
+
 ## :rocket: Tecnologias ##
 
 As seguintes tecnologias foram utilizadas no projeto:
